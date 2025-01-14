@@ -17,14 +17,15 @@ function Home(){
     }
 
     const deleteNote = (id) => {
-        api.delete(`/api/notes/delete/${id}`).then((res) => {
-            if (res.status === 284) alert("Note deleted successfully");
-            else alert("An error occurred delete");
-            getNotes();
-        }).catch((err) => {
-            alert(err)
-        })
-    }
+        api
+            .delete(`/api/notes/delete/${id}/`)
+            .then((res) => {
+                if (res.status === 204) alert("Note deleted!");
+                else alert("Failed to delete note.");
+                getNotes();
+            })
+            .catch((error) => alert(error));
+    };
 
     const createNote = (e) => {
         e.preventDefault()
@@ -41,7 +42,7 @@ function Home(){
         <div>
             <h2>Notes</h2>
             {notes.map((note) => (
-                <Note note={note} OnDelete={deleteNote} key={note.id}/>
+                <Note note={note} onDelete={deleteNote} key={note.id}/>
             ))}
         </div>
         <h2>Create a Note</h2>
