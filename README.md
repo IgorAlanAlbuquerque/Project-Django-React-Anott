@@ -16,4 +16,6 @@ O frontend foi feito usando react com vite
 
 Fiz o deploy com nível gratuito do choreo. Primeiro criei o banco de dados postgresql remoto então coloquei as credenciais no arquivo ".env" do backend.
 
-Para o backend eu criei a pasta ".choreo" que vai conter o codigo ansible para criação dos endpoints da aplicação. O arquivo Procfile tem o comando a ser executado para iniciar a aplicação web.
+Para o backend eu criei a pasta ".choreo" que vai conter o codigo ansible para criação dos endpoints da aplicação. O arquivo Procfile tem o comando a ser executado para iniciar a aplicação web. Fiz o deploy do backend como um serviço rest.
+
+Para o frontend fiz o deploy como uma aplicação web.
