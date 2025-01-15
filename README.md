@@ -19,3 +19,5 @@ Fiz o deploy com nível gratuito do choreo. Primeiro criei o banco de dados post
 Para o backend eu criei a pasta ".choreo" que vai conter o codigo ansible para criação dos endpoints da aplicação. O arquivo Procfile tem o comando a ser executado para iniciar a aplicação web. Fiz o deploy do backend como um serviço rest.
 
 Para o frontend fiz o deploy como uma aplicação web.
+
+Pode ser acessado em: https://6a93facd-8fc1-4dbb-b00f-e512437efd49.e1-us-east-azure.choreoapps.dev porém é necessário ativar o banco antes.
