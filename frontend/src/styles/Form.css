@@ -1,3 +1,7 @@
+.centered-container {
+    text-align: center; /* Centraliza o texto dentro do parágrafo */
+}
+
 .form-container {
     display: flex;
     flex-direction: column;

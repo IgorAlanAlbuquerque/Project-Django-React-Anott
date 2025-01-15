@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react"
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import Login from "./pages/Login"
@@ -31,7 +32,7 @@ function App() {
         />
         <Route path="/login" element={<Login/>}/>
         <Route path="/logout" element={<Logout/>}/>
-        <Route path="register" element={<RegisterAndLogout/>}/>
+        <Route path="/register" element={<RegisterAndLogout/>}/>
         <Route path="*" element={<NotFound/>}/>
       </Routes>
     </BrowserRouter>

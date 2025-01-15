@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import LogoutButton from "../components/Logout"
 import api from "../api" 
 import Note from "../components/Note"
 import "../styles/Home.css"
@@ -40,12 +41,15 @@ function Home(){
 
     return <div>
         <div>
+            <LogoutButton/>
+        </div>
+        <div>
             <h2>Notes</h2>
             {notes.map((note) => (
                 <Note note={note} onDelete={deleteNote} key={note.id}/>
             ))}
         </div>
-        <h2>Create a Note</h2>
+        <h2 className="h2CreateNote">Create a Note</h2>
         <form onSubmit={createNote}>
             <label htmlFor="title">Title:</label>
             <br/>
